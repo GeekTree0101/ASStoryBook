@@ -1,0 +1,6 @@
+framework module ASStoryBook {
+  umbrella header "ASStoryBook-umbrella.h"
+
+  export *
+  module * { export * }
+}

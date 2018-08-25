@@ -1,0 +1,22 @@
+{
+  "name": "ASStoryBook",
+  "version": "0.1.0",
+  "summary": "A short description of ASStoryBook.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Geektree0101/ASStoryBook",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Geektree0101": "h2s1880@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Geektree0101/ASStoryBook.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ASStoryBook/Classes/**/*"
+}

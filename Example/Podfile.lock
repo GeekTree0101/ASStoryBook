@@ -1,0 +1,16 @@
+PODS:
+  - ASStoryBook (0.1.0)
+
+DEPENDENCIES:
+  - ASStoryBook (from `../`)
+
+EXTERNAL SOURCES:
+  ASStoryBook:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ASStoryBook: d2a7de5e9e13238369c73fc13177d42fa6827ec7
+
+PODFILE CHECKSUM: 1e99a4b029fcf10077a96076dd691f4832f904a4
+
+COCOAPODS: 1.5.3
