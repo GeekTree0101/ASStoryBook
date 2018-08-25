@@ -1,0 +1,6 @@
+use_frameworks!
+target 'ASStoryBook_Tests' do
+  pod 'ASStoryBook', :path => '../'
+  
+  
+end
