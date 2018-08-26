@@ -1,6 +1,10 @@
 import Foundation
 import AsyncDisplayKit
 
+public protocol ASStoryBookProtocol {
+    static var generate: ASStoryBookGroupCategory { get }
+}
+
 public protocol ASStoryBookCategory {
     var name: String { get set }
 }
