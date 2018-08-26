@@ -1,15 +1,49 @@
 PODS:
-  - ASStoryBook (0.1.0)
+  - ASStoryBook (0.1.0):
+    - Texture (= 2.7)
+  - PINCache (3.0.1-beta.6):
+    - PINCache/Arc-exception-safe (= 3.0.1-beta.6)
+    - PINCache/Core (= 3.0.1-beta.6)
+  - PINCache/Arc-exception-safe (3.0.1-beta.6):
+    - PINCache/Core
+  - PINCache/Core (3.0.1-beta.6):
+    - PINOperation (~> 1.1.0)
+  - PINOperation (1.1.1)
+  - PINRemoteImage/Core (3.0.0-beta.13):
+    - PINOperation
+  - PINRemoteImage/iOS (3.0.0-beta.13):
+    - PINRemoteImage/Core
+  - PINRemoteImage/PINCache (3.0.0-beta.13):
+    - PINCache (= 3.0.1-beta.6)
+    - PINRemoteImage/Core
+  - Texture (2.7):
+    - Texture/PINRemoteImage (= 2.7)
+  - Texture/Core (2.7)
+  - Texture/PINRemoteImage (2.7):
+    - PINRemoteImage/iOS (= 3.0.0-beta.13)
+    - PINRemoteImage/PINCache
+    - Texture/Core
 
 DEPENDENCIES:
   - ASStoryBook (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - PINCache
+    - PINOperation
+    - PINRemoteImage
+    - Texture
 
 EXTERNAL SOURCES:
   ASStoryBook:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ASStoryBook: d2a7de5e9e13238369c73fc13177d42fa6827ec7
+  ASStoryBook: 421dc4d211259723ff28aad4139270db7783999b
+  PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
+  PINOperation: a6219e6fc9db9c269eb7a7b871ac193bcf400aac
+  PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
+  Texture: 9d7e38965cf22ccd7cd9c249dd78b3f14e70ab6c
 
 PODFILE CHECKSUM: 1e99a4b029fcf10077a96076dd691f4832f904a4
 

@@ -1,8 +1,8 @@
 {
   "name": "ASStoryBook",
   "version": "0.1.0",
-  "summary": "A short description of ASStoryBook.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "Texture Interactive UI component dev & test",
+  "description": "Interactive UI component dev & test built on Texture",
   "homepage": "https://github.com/Geektree0101/ASStoryBook",
   "license": {
     "type": "MIT",
@@ -16,7 +16,12 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.3"
   },
-  "source_files": "ASStoryBook/Classes/**/*"
+  "source_files": "ASStoryBook/Classes/**/*",
+  "dependencies": {
+    "Texture": [
+      "2.7"
+    ]
+  }
 }

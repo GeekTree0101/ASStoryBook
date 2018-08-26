@@ -6,10 +6,10 @@ public protocol ASStoryBookCategory {
 }
 
 public struct ASStoryBookGroupCategory: ASStoryBookCategory {
-    var name: String
-    var categories: [ASStoryBookSubCategory]
+    public var name: String
+    public var categories: [ASStoryBookSubCategory]
     
-    init(_ name: String,
+    public init(_ name: String,
          categories: [ASStoryBookSubCategory]) {
         self.name = name
         self.categories = categories
@@ -17,17 +17,17 @@ public struct ASStoryBookGroupCategory: ASStoryBookCategory {
 }
 
 public struct ASStoryBookSubCategory {
-    var name: String
-    var story: StoryType
-    var preview: UIImage?
+    public var name: String
+    public var story: StoryType
+    public var preview: UIImage?
     
-    enum StoryType {
+    public enum StoryType {
         case list([String: ASCellNode])
         case node([String: ASDisplayNode])
         case viewControllers([String: UIViewController])
     }
     
-    init(_ name: String,
+    public init(_ name: String,
          story: StoryType,
          preview: UIImage? = nil) {
         self.name = name
