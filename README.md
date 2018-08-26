@@ -12,12 +12,15 @@
 - Sample Project: https://github.com/GeekTree0101/ASStoryBook/tree/master/Example/Sample
 - Video: https://youtu.be/-TEbhEr3yZY
 
-```
+> ### 1. Create Stroybook
+```swift
 import Foundation
 import ASStoryBook
 
+// 1. Inherit ASStoryBookProtocol
 struct SampleStorybook: ASStoryBookProtocol {
     static var generate: ASStoryBookGroupCategory = {
+        // 2. create mock UI
         let cCellNode1 = CCellNode.init(desc: "Has Description")
         let cCellNode2 = CCellNode.init(desc: nil)
         
@@ -30,15 +33,47 @@ struct SampleStorybook: ASStoryBookProtocol {
         let dCellNode1 = DCellNode.init(.large)
         let dCellNode2 = DCellNode.init(.small)
         
+        // 3. create sub category
         let dCellNodeCategory =
             ASStoryBookSubCategory("DCellNode",
                                    story: .list(["large case": dCellNode1,
                                                  "small case": dCellNode2]))
         
+        // 4. create group category
         return ASStoryBookGroupCategory("Sample Controller",
                                         categories: [cCellNodeCategory,
                                                      dCellNodeCategory])
     }()
+}
+```
+
+> ### 2. Create Storybook AppDelegate
+```swift
+import UIKit
+import ASStoryBook
+
+@UIApplicationMain
+class SampleStorybookAppDelegate: UIResponder, UIApplicationDelegate {
+    
+    var window: UIWindow?
+    
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        // MARK: - Setup attribute
+        ASStorybookManager.manager.setupAppname("Sample") // Optional
+        // ASStorybookManager.manager.setupEnableHitTestDebug() // Optionnal
+        
+        // MARK: - Setup Categories
+        ASStorybookManager.manager.setupCategories([ExampleStorybook.generate,
+                                                    SampleStorybook.generate,
+                                                    ProfileStoryBook.generate])
+        
+        // MARK: - Run
+        window = ASStorybookManager.manager.didFinishLaunching()
+        
+        return true
+    }
 }
 ```
 
