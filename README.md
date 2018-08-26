@@ -1,6 +1,5 @@
-# ASStoryBook
 <img src="https://github.com/GeekTree0101/ASStoryBook/blob/master/Resource/banner.png">
-> ## Interactive UI component dev & test built on Texture
+
 
 [![CI Status](https://img.shields.io/travis/Geektree0101/ASStoryBook.svg?style=flat)](https://travis-ci.org/Geektree0101/ASStoryBook)
 [![Version](https://img.shields.io/cocoapods/v/ASStoryBook.svg?style=flat)](https://cocoapods.org/pods/ASStoryBook)
