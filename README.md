@@ -9,8 +9,8 @@
 
 
 ## Example
-Sample Project: https://github.com/GeekTree0101/ASStoryBook/tree/master/Example/Sample
-Video: https://youtu.be/-TEbhEr3yZY
+- Sample Project: https://github.com/GeekTree0101/ASStoryBook/tree/master/Example/Sample
+- Video: https://youtu.be/-TEbhEr3yZY
 
 ```
 import Foundation
