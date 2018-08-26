@@ -15,7 +15,8 @@ class SampleStorybookAppDelegate: UIResponder, UIApplicationDelegate {
         
         // MARK: - Setup Categories
         ASStorybookManager.manager.setupCategories([ExampleStorybook.generate,
-                                                    SampleStorybook.generate])
+                                                    SampleStorybook.generate,
+                                                    ProfileStoryBook.generate])
         
         // MARK: - Run
         window = ASStorybookManager.manager.didFinishLaunching()

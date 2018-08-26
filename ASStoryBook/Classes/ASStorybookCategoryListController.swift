@@ -67,8 +67,7 @@ extension ASStorybookCategoryListNodeController: ASTableDataSource {
             virtualCellNode.automaticallyManagesSubnodes = true
             virtualCellNode.layoutSpecBlock = { [weak targetNode] (_ , _) -> ASLayoutSpec in
                 guard let `targetNode` = targetNode else { return ASLayoutSpec() }
-                return ASInsetLayoutSpec(insets: .zero,
-                                         child: targetNode)
+                return ASAbsoluteLayoutSpec(children: [targetNode])
             }
             return virtualCellNode
         default:

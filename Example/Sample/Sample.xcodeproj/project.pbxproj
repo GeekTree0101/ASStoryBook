@@ -28,8 +28,11 @@
 		9B319C202132636700C2304B /* CCellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B319C042132590000C2304B /* CCellNode.swift */; };
 		9B319C242132636700C2304B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B319BF12132570700C2304B /* LaunchScreen.storyboard */; };
 		9B319C252132636700C2304B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B319BEF2132570700C2304B /* Assets.xcassets */; };
-		9B319C2C2132639000C2304B /* SampleStorybook-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B319C2B2132636700C2304B /* SampleStorybook-Info.plist */; };
 		9B319C2E2132639300C2304B /* SampleStorybookAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B319C0C21325EF100C2304B /* SampleStorybookAppDelegate.swift */; };
+		9B319C3221326BAE00C2304B /* ProfileNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B319C3121326BAE00C2304B /* ProfileNode.swift */; };
+		9B319C3321326CA000C2304B /* ProfileNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B319C3121326BAE00C2304B /* ProfileNode.swift */; };
+		9B319C3521326D2300C2304B /* SampleStorybook-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B319C3421326D2300C2304B /* SampleStorybook-Info.plist */; };
+		9B319C3721326D4700C2304B /* ProfileStorybook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B319C3621326D4700C2304B /* ProfileStorybook.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,8 +55,10 @@
 		9B319C0F213260F600C2304B /* ExampleStorybook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleStorybook.swift; sourceTree = "<group>"; };
 		9B319C112132610100C2304B /* SampleStorybook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleStorybook.swift; sourceTree = "<group>"; };
 		9B319C2A2132636700C2304B /* SampleStorybook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleStorybook.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B319C2B2132636700C2304B /* SampleStorybook-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SampleStorybook-Info.plist"; path = "/Users/vingle/Desktop/Sample/SampleStorybook-Info.plist"; sourceTree = "<absolute>"; };
 		9B319C2F2132681100C2304B /* Pods_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B319C3121326BAE00C2304B /* ProfileNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNode.swift; sourceTree = "<group>"; };
+		9B319C3421326D2300C2304B /* SampleStorybook-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SampleStorybook-Info.plist"; sourceTree = "<group>"; };
+		9B319C3621326D4700C2304B /* ProfileStorybook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileStorybook.swift; sourceTree = "<group>"; };
 		B9A85D817AC42C69DEE8901E /* Pods_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1309A5F2A4D5A27F25755FD /* Pods-SampleStorybook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleStorybook.release.xcconfig"; path = "Pods/Target Support Files/Pods-SampleStorybook/Pods-SampleStorybook.release.xcconfig"; sourceTree = "<group>"; };
 		ECDF530F30A28823F3D9CF18 /* Pods_SampleStorybook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleStorybook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +134,7 @@
 				9B319C02213258F800C2304B /* BCellNode.swift */,
 				9B319C042132590000C2304B /* CCellNode.swift */,
 				9B319C062132590700C2304B /* DCellNode.swift */,
+				9B319C3121326BAE00C2304B /* ProfileNode.swift */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
@@ -144,10 +150,11 @@
 		9B319C0B21325ED000C2304B /* SampleStorybook */ = {
 			isa = PBXGroup;
 			children = (
-				9B319C2B2132636700C2304B /* SampleStorybook-Info.plist */,
+				9B319C3421326D2300C2304B /* SampleStorybook-Info.plist */,
 				9B319C0C21325EF100C2304B /* SampleStorybookAppDelegate.swift */,
 				9B319C0F213260F600C2304B /* ExampleStorybook.swift */,
 				9B319C112132610100C2304B /* SampleStorybook.swift */,
+				9B319C3621326D4700C2304B /* ProfileStorybook.swift */,
 			);
 			path = SampleStorybook;
 			sourceTree = "<group>";
@@ -264,7 +271,7 @@
 			files = (
 				9B319C242132636700C2304B /* LaunchScreen.storyboard in Resources */,
 				9B319C252132636700C2304B /* Assets.xcassets in Resources */,
-				9B319C2C2132639000C2304B /* SampleStorybook-Info.plist in Resources */,
+				9B319C3521326D2300C2304B /* SampleStorybook-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +373,7 @@
 			files = (
 				9B319BE92132570600C2304B /* AppDelegate.swift in Sources */,
 				9B319C01213258F000C2304B /* ACellNode.swift in Sources */,
+				9B319C3221326BAE00C2304B /* ProfileNode.swift in Sources */,
 				9B319C0A213259F500C2304B /* String+Sample.swift in Sources */,
 				9B319C072132590700C2304B /* DCellNode.swift in Sources */,
 				9B319BFD2132580D00C2304B /* SampleNodeController.swift in Sources */,
@@ -381,9 +389,11 @@
 			files = (
 				9B319C182132636700C2304B /* ACellNode.swift in Sources */,
 				9B319C192132636700C2304B /* SampleStorybook.swift in Sources */,
+				9B319C3321326CA000C2304B /* ProfileNode.swift in Sources */,
 				9B319C1A2132636700C2304B /* String+Sample.swift in Sources */,
 				9B319C1B2132636700C2304B /* DCellNode.swift in Sources */,
 				9B319C2E2132639300C2304B /* SampleStorybookAppDelegate.swift in Sources */,
+				9B319C3721326D4700C2304B /* ProfileStorybook.swift in Sources */,
 				9B319C1D2132636700C2304B /* BCellNode.swift in Sources */,
 				9B319C1E2132636700C2304B /* ExampleStorybook.swift in Sources */,
 				9B319C202132636700C2304B /* CCellNode.swift in Sources */,
@@ -563,7 +573,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JTEXWEH4CZ;
-				INFOPLIST_FILE = "$(SRCROOT)/SampleStorybook-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SampleStorybook/SampleStorybook-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -582,7 +592,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JTEXWEH4CZ;
-				INFOPLIST_FILE = "$(SRCROOT)/SampleStorybook-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SampleStorybook/SampleStorybook-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
