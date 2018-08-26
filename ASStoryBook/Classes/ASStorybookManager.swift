@@ -1,7 +1,7 @@
 import Foundation
 import AsyncDisplayKit
 
-struct ASStorybookManager {
+public struct ASStorybookManager {
     typealias GroupCategory = ASStoryBookGroupCategory
     typealias Manager = ASStorybookManager
     

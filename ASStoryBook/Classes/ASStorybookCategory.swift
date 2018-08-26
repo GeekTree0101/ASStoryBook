@@ -1,11 +1,11 @@
 import Foundation
 import AsyncDisplayKit
 
-protocol ASStoryBookCategory {
+public protocol ASStoryBookCategory {
     var name: String { get set }
 }
 
-struct ASStoryBookGroupCategory: ASStoryBookCategory {
+public struct ASStoryBookGroupCategory: ASStoryBookCategory {
     var name: String
     var categories: [ASStoryBookSubCategory]
     
@@ -16,7 +16,7 @@ struct ASStoryBookGroupCategory: ASStoryBookCategory {
     }
 }
 
-struct ASStoryBookSubCategory {
+public struct ASStoryBookSubCategory {
     var name: String
     var story: StoryType
     var preview: UIImage?
